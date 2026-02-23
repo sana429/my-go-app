@@ -4,9 +4,11 @@ import "fmt"
 
 func main() {
 
-	var name string
+	var firstName, lastName string
 
-	fmt.Println("Enter name: ")
-	fmt.Scanln(&name)
-	fmt.Println("You entered name: ", name)
+	fmt.Println("Enter first name: ")
+	fmt.Scanln(&firstName)
+	fmt.Println("Enter last name: ")
+	fmt.Scanln(&lastName)
+	fmt.Println("You entered name: ", firstName, lastName)
 }
