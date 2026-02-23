@@ -4,11 +4,20 @@ import "fmt"
 
 func main() {
 
-	var firstName, lastName string
+	var choice int
 
-	fmt.Println("Enter first name: ")
-	fmt.Scanln(&firstName)
-	fmt.Println("Enter last name: ")
-	fmt.Scanln(&lastName)
-	fmt.Println("You entered name: ", firstName, lastName)
+	fmt.Println("1. Greet")
+	fmt.Println("2. Exit")
+	fmt.Println("Choose: ")
+
+	fmt.Scanln(&choice)
+
+	if choice == 1 {
+		var name string
+		fmt.Println("Enter your name: ")
+		fmt.Scanln(&name)
+		fmt.Println("Hello:", name)
+	} else {
+		fmt.Println("Goodbye")
+	}
 }
