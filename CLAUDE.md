@@ -25,5 +25,6 @@ This is a CLI menu application. `main.go` presents an interactive menu and dispa
 - **`main.go`**: Menu loop and top-level routing
 - **`internal/greet.go`**: `GreetUser()` — prompts for a name and prints a greeting
 - **`internal/datetime.go`**: `ShowDateTime()` — prints the current date and time using Go's `time` package
+- **`internal/todo.go`**: `TodoMenu()` — sub-menu loop for to-do operations; `AddTask()`, `ListTasks()`, `RemoveTask()` — manage an in-memory `[]string` task list
 
 New menu options should follow the same pattern: add a case in `main.go` and implement the logic as a function in `internal/`.
